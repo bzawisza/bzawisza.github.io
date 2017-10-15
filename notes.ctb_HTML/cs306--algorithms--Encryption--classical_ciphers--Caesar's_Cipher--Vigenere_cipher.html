@@ -59,6 +59,11 @@
 <li><a href="cs306--algorithms--MAC--Fixed_Length.html">Fixed Length</a></li>
 <li><a href="cs306--algorithms--MAC--Domain_extension.html">Domain extension</a></li>
 <li><a href="cs306--algorithms--MAC--CBC.html">CBC</a></li>
+<li><a href="cs306--algorithms--MAC--Hashing.html">Hashing</a></li>
+<ol>
+<li><a href="cs306--algorithms--MAC--Hashing--Insecure.html">Insecure</a></li>
+<li><a href="cs306--algorithms--MAC--Hashing--HMAC.html">HMAC</a></li>
+</ol>
 </ol>
 <li><a href="cs306--algorithms--Authenticated_encryption.html">Authenticated encryption</a></li>
 <ol>
@@ -80,11 +85,35 @@
 <li><a href="cs306--algorithms--Hashes--Functions--SHA2.html">SHA2</a></li>
 <li><a href="cs306--algorithms--Hashes--Functions--SHA3.html">SHA3</a></li>
 </ol>
+<li><a href="cs306--algorithms--Hashes--Applications.html">Applications</a></li>
+<ol>
+<li><a href="cs306--algorithms--Hashes--Applications--MAC.html">MAC</a></li>
+<ol>
+<li><a href="cs306--algorithms--Hashes--Applications--MAC--Insecure.html">Insecure</a></li>
+<li><a href="cs306--algorithms--Hashes--Applications--MAC--HMAC.html">HMAC</a></li>
+</ol>
+<li><a href="cs306--algorithms--Hashes--Applications--Cloud_Storage.html">Cloud Storage</a></li>
+<ol>
+<li><a href="cs306--algorithms--Hashes--Applications--Cloud_Storage--Plain.html">Plain</a></li>
+<li><a href="cs306--algorithms--Hashes--Applications--Cloud_Storage--Secure.html">Secure</a></li>
+<ol>
+<li><a href="cs306--algorithms--Hashes--Applications--Cloud_Storage--Secure--whole_file.html">whole file</a></li>
+<li><a href="cs306--algorithms--Hashes--Applications--Cloud_Storage--Secure--separate_file.html">separate file</a></li>
+<li><a href="cs306--algorithms--Hashes--Applications--Cloud_Storage--Secure--merkle_tree.html">merkle tree</a></li>
 </ol>
 </ol>
+<li><a href="cs306--algorithms--Hashes--Applications--Digital_Envelops_-_Commitment_Schemes.html">Digital Envelops / Commitment Schemes</a></li>
+<li><a href="cs306--algorithms--Hashes--Applications--Forward-secure_key_rotation.html">Forward-secure key rotation</a></li>
+<li><a href="cs306--algorithms--Hashes--Applications--File_Identifiers.html">File Identifiers</a></li>
+</ol>
+</ol>
+</ol>
+<li><a href="cs306--attacks.html">attacks</a></li>
 <li><a href="cs306--Labs.html">Labs</a></li>
 <ol>
 <li><a href="cs306--Labs--Lab_3.html">Lab 3</a></li>
-</ol></ol></div>
+</ol>
+<li><a href="cs306--homework.html">homework</a></li>
+</ol></div>
 <div class="page"><h1><b><u>Vigenere cipher</u></b></h1><h3>Vigenere cipher</h3><br />• generalization of mono-alphabetic substitution cipher<br />• key space defines fixed (shift) mapping that is applied on block of characters<br />• a key k is a string of length t, defining the shift for blocks of size t<br />• e.g. k = (2,1,3,11). Each block is shifted respectively by 2,1,3,11<br />• plaintext-to-ciphertext mapping is many-to-many<br />• if the key length t is known: problem is reduced to attacking the shift cipher<br />   ◇ statistical attacks for each subsequence of the from c<sub>j</sub>, c<sub>j+t</sub>, c<sub>j+2t</sub>...<br />• if key length t is unknown:<br />   ◇ repeat stastical attacks for gussed values of t.<br />   ◇ Kasiski's method: identify repeated patterns of length 2 or 3 in the ciphertext.p period t can be decuded by locations of these patterns in the text<br />   ◇ index of coincidence method: compute S<sub>T</sub> = Σ<sub>i</sub>q<sub>i</sub><sup>2</sup> and stop when S<sub>T</sub>  = 0.065. T is a multiple of t.</div></div>
 </body></html>
