@@ -142,5 +142,5 @@
 </ol>
 <li><a href="cs306--homework.html">homework</a></li>
 </ol></div>
-<div class="page"><h1><b><u>HMAC</u></b></h1><h3>MAC: Secure MAC based on hashing</h3><br />• HMAC<sub>k</sub>[m] = H[ (k ⊕ opad) || H[ (k ⊕ ipad) || m ] ]<br />   ◇ two layers of hashing H<sup>s</sup> - instantiation of hash and sign paradigm<br />• upper layer<br />   ◇ y = H( (k ⊕ ipad) || m )<br />   ◇ y = H'(m)<br />• lower layer<br />   ◇ t = H( (k ⊕ opad) || y' )<br />   ◇ t = Mac'(k<sub>out</sub>y')<br />• if used with a secure hash function and follows specification (key size, correct output), no known practical attacks<br /><img src="images\52-1.png" alt="images\52-1.png" /></div></div>
+<div class="page"><h1><b><u>HMAC</u></b></h1><a name="h3-1"></a><h3>HMAC: Secure MAC based on hashing</h3><br />• HMAC<sub>k</sub>[m] = H[ (k ⊕ opad) || H[ (k ⊕ ipad) || m ] ]<br />   ◇ two layers of hashing H<sup>s</sup> - instantiation of hash and sign paradigm<br />• upper layer<br />   ◇ y = H( (k ⊕ ipad) || m )<br />   ◇ y = H'(m)<br />• lower layer<br />   ◇ t = H( (k ⊕ opad) || y' )<br />   ◇ t = Mac'(k<sub>out</sub>y')<br />• if used with a secure hash function and follows specification (key size, correct output), no known practical attacks<br /><img src="images\52-1.png" alt="images\52-1.png" /></div></div>
 </body></html>
